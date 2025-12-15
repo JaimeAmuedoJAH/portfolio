@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Data Analyst</title>
+  <meta name="description" content="Portfolio profesional de Data Analyst especializado en SQL, Python y Power BI." />
+
+  <!-- Google Font (opcional, solo tipografía) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navegación fija -->
+  <header class="header">
+    <div class="container header__content">
+      <div class="logo">JA.</div>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Inicio</a></li>
+          <li><a href="#projects" class="nav__link">Proyectos</a></li>
+          <li><a href="#about" class="nav__link">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Banner principal -->
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Data Analyst</p>
+          <h1 class="hero__title">Jaime Alvarez</h1>
+          <h2 class="hero__subtitle">Data Analyst | SQL | Python | Power BI</h2>
+          <p class="hero__description">
+            Transformo datos en decisiones accionables. Diseño dashboards claros,
+            modelos analíticos robustos y reportes que impulsan el crecimiento del negocio.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">Ver proyectos</a>
+            <a href="#about" class="btn btn--ghost">Sobre mí</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card">
+            <p class="hero__card-label">Insights en tiempo real</p>
+            <p class="hero__card-metric">+27%</p>
+            <p class="hero__card-desc">Mejora media en eficiencia reportada tras iniciativas de análisis.</p>
+          </div>
+          <div class="hero__chart hero__chart--one"></div>
+          <div class="hero__chart hero__chart--two"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Proyectos destacados</h2>
+          <p class="section__subtitle">
+            Selección de proyectos que muestran mi enfoque en negocio, datos y visualización.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Dashboard de Ventas Globales</h3>
+              <p class="project-card__tag">Power BI · SQL</p>
+            </div>
+            <p class="project-card__description">
+              Desarrollo de un dashboard interactivo para monitorizar rendimiento de ventas
+              por región, canal y línea de producto, con KPIs y alertas tempranas.
+            </p>
+            <ul class="project-card__tech">
+              <li>Power BI</li>
+              <li>SQL Server</li>
+              <li>DAX</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">Demo</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Análisis de Churn de Clientes</h3>
+              <p class="project-card__tag">Python · Machine Learning</p>
+            </div>
+            <p class="project-card__description">
+              Modelización de probabilidad de abandono, segmentación de clientes
+              y recomendaciones de retención basadas en patrones de comportamiento.
+            </p>
+            <ul class="project-card__tech">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Scikit-learn</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">Notebook</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Optimización de Inventario</h3>
+              <p class="project-card__tag">Excel · SQL</p>
+            </div>
+            <p class="project-card__description">
+              Construcción de modelos para ajustar niveles de stock y reducir roturas,
+              integrando datos de demanda histórica y plazos de proveedor.
+            </p>
+            <ul class="project-card__tech">
+              <li>Excel Avanzado</li>
+              <li>SQL</li>
+              <li>Power Query</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">Documento</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 4 -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Monitor de Marketing Digital</h3>
+              <p class="project-card__tag">Google Data Studio</p>
+            </div>
+            <p class="project-card__description">
+              Consolidación de datos de campañas (Ads, Social, Email) en un único dashboard,
+              midiendo ROAS, CPL y embudos de conversión.
+            </p>
+            <ul class="project-card__tech">
+              <li>Google Data Studio</li>
+              <li>Google Analytics</li>
+              <li>APIs</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">Reporte</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about__text">
+          <h2 class="section__title">Sobre mí</h2>
+          <p class="section__subtitle">
+            Data Analyst con enfoque en negocio, apasionado por traducir datos complejos
+            en historias claras que impulsen decisiones estratégicas.
+          </p>
+          <p>
+            Tengo experiencia trabajando con equipos de marketing, ventas y operaciones,
+            diseñando soluciones analíticas end-to-end: desde la extracción y limpieza de datos,
+            hasta la construcción de dashboards y la presentación de insights clave a stakeholders.
+          </p>
+          <p>
+            Me siento cómodo trabajando tanto con herramientas de BI como con código,
+            y disfruto especialmente de los proyectos donde los datos se conectan directamente
+            con métricas de impacto real en el negocio.
+          </p>
+        </div>
+
+        <div class="about__skills">
+          <h3 class="about__skills-title">Habilidades técnicas</h3>
+          <ul class="skills-list">
+            <li class="skills-list__item">
+              <span class="skills-list__label">Lenguajes</span>
+              <span class="skills-list__value">SQL, Python, DAX</span>
+            </li>
+            <li class="skills-list__item">
+              <span class="skills-list__label">Herramientas BI</span>
+              <span class="skills-list__value">Power BI, Tableau, Looker Studio</span>
+            </li>
+            <li class="skills-list__item">
+              <span class="skills-list__label">Data Wrangling</span>
+              <span class="skills-list__value">Pandas, Power Query, ETL básico</span>
+            </li>
+            <li class="skills-list__item">
+              <span class="skills-list__label">Reporting</span>
+              <span class="skills-list__value">Dashboards ejecutivos, storytelling con datos</span>
+            </li>
+            <li class="skills-list__item">
+              <span class="skills-list__label">Otros</span>
+              <span class="skills-list__value">Excel avanzado, Git, APIs REST</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__copy">
+        © <span id="year"></span> Jaime Alvarez · Data Analyst
+      </p>
+      <div class="footer__links">
+        <!-- Reemplazar # por enlaces reales -->
+        <a href="mailto:tuemail@ejemplo.com" class="footer__link">Email</a>
+        <a href="#" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
