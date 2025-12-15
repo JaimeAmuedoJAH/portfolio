@@ -45,4 +45,3 @@ One-page portfolio en HTML/CSS/JS vanilla, listo para GitHub Pages. Muestra perf
 ## Contacto
 - [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jaimeamuedo@gmail.com)
 - [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaime-amuedo-a432bb354/)
-- [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JaimeAmuedoJAH)
