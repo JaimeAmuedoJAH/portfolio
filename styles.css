@@ -329,85 +329,54 @@
   .hero__visual {
     position: relative;
     min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
   
-  .hero__card {
-    position: relative;
-    background: radial-gradient(
-        circle at 0% 0%,
-        rgba(56, 189, 248, 0.15),
-        transparent 55%
-      ),
-      radial-gradient(
-        circle at 100% 100%,
-        rgba(250, 250, 250, 0.04),
-        rgba(15, 23, 42, 0.9)
-      );
-    border-radius: 24px;
-    border: 1px solid rgba(148, 163, 184, 0.4);
-    box-shadow: var(--shadow-soft);
-    padding: 1.35rem 1.4rem;
-    max-width: 320px;
-    margin-left: auto;
+.hero__photo {
+  position: relative;
+  width: min(320px, 90%);
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: var(--shadow-soft);
+  background: radial-gradient(
+      circle at 0% 0%,
+      rgba(79, 70, 229, 0.18),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(15, 23, 42, 0.9),
+      rgba(15, 23, 42, 1)
+    );
   }
   
-  .hero__card-label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: #a5b4fc;
-    margin: 0 0 0.4rem;
-  }
-  
-  .hero__card-metric {
-    font-size: 2.1rem;
-    font-weight: 600;
-    letter-spacing: -0.04em;
-    margin: 0 0 0.3rem;
-  }
-  
-  .hero__card-desc {
-    margin: 0;
-    font-size: 0.84rem;
-    color: var(--color-text-soft);
-  }
-  
-  /* Pseudográficos tipo charts */
-  .hero__chart {
-    position: absolute;
-    border-radius: 18px;
-    border: 1px solid rgba(148, 163, 184, 0.4);
-    background: radial-gradient(circle at 10% 0%, rgba(15, 23, 42, 1), #020617);
-    overflow: hidden;
-  }
-  
-  .hero__chart--one {
-    width: 170px;
-    height: 110px;
-    right: 12%;
-    top: 64%;
-  }
-  
-  .hero__chart--two {
-    width: 130px;
-    height: 130px;
-    left: 4%;
-    top: 16%;
-  }
-  
-  .hero__chart--one::before,
-  .hero__chart--two::before {
-    content: "";
-    position: absolute;
-    inset: 18%;
-    border-radius: 12px;
-    border-left: 2px solid rgba(129, 140, 248, 0.7);
-    border-bottom: 2px solid rgba(45, 212, 191, 0.7);
-    border-right: 2px solid rgba(248, 250, 252, 0.07);
-    border-top: 2px solid rgba(15, 23, 42, 1);
-    opacity: 0.88;
-  }
-  
+.hero__photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(79, 70, 229, 0.25),
+    rgba(34, 197, 94, 0.05),
+    rgba(15, 23, 42, 0.35)
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05);
+}
+
   /* Secciones generales */
   .section {
     padding: 4.2rem 0;
@@ -632,6 +601,242 @@
     text-align: right;
   }
   
+/* Extra (Formación y conocimientos) */
+.extra {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.extra__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.extra-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: radial-gradient(
+      circle at 0% 0%,
+      rgba(79, 70, 229, 0.18),
+      transparent 55%
+    ),
+    var(--color-surface);
+  padding: 1.4rem 1.3rem 1.35rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow),
+    border-color var(--transition-fast);
+}
+
+.extra-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.85);
+  border-color: rgba(129, 140, 248, 0.9);
+}
+
+.extra-card__pill {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.24rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: rgba(15, 23, 42, 0.8);
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c7d2fe;
+}
+
+.extra-card__pill--accent {
+  background: linear-gradient(120deg, rgba(79, 70, 229, 0.35), rgba(34, 197, 94, 0.2));
+  border-color: rgba(129, 140, 248, 0.75);
+  color: #e5e7eb;
+}
+
+.extra-card__title {
+  margin: 0;
+  font-size: 1.08rem;
+  letter-spacing: -0.01em;
+}
+
+.extra-card__text {
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 0.95rem;
+}
+
+.extra-card__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-text);
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.extra-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.extra-card__chips span {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(79, 70, 229, 0.16);
+  border: 1px solid rgba(129, 140, 248, 0.5);
+  color: #e5e7eb;
+  font-size: 0.86rem;
+}
+
+/* Contacto */
+.section--contact {
+  background: radial-gradient(
+      circle at 0% 0%,
+      rgba(56, 189, 248, 0.08),
+      transparent 48%
+    ),
+    radial-gradient(
+      circle at 100% 30%,
+      rgba(79, 70, 229, 0.08),
+      transparent 45%
+    ),
+    var(--color-bg);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.contact__card {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: radial-gradient(
+      circle at 0% 0%,
+      rgba(79, 70, 229, 0.2),
+      transparent 60%
+    ),
+    var(--color-surface);
+  box-shadow: var(--shadow-soft);
+  padding: 1.4rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact__card--cta {
+  background: linear-gradient(145deg, rgba(79, 70, 229, 0.14), rgba(15, 23, 42, 0.95));
+  border-color: rgba(129, 140, 248, 0.55);
+}
+
+.contact__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.28rem 0.8rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.8);
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c7d2fe;
+  width: fit-content;
+}
+
+.contact__pill--accent {
+  background: linear-gradient(120deg, rgba(79, 70, 229, 0.35), rgba(34, 197, 94, 0.22));
+  border-color: rgba(129, 140, 248, 0.85);
+  color: #e5e7eb;
+}
+
+.contact__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.contact__item {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.contact__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(129, 140, 248, 0.16);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  font-size: 1.1rem;
+}
+
+.contact__label {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a5b4fc;
+}
+
+.contact__value {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.contact__cta-text {
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 0.96rem;
+  max-width: 26rem;
+}
+
+.contact__actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.contact__links {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.contact__links a {
+  color: #c4b5fd;
+  text-decoration: none;
+  padding-bottom: 0.08rem;
+  border-bottom: 1px dashed rgba(196, 181, 253, 0.7);
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.contact__links a:hover {
+  color: #e5e7eb;
+  border-color: rgba(244, 244, 245, 0.9);
+}
+
   /* Footer */
   .footer {
     padding: 1.6rem 0 2.2rem;
@@ -776,6 +981,22 @@
     .about__skills {
       margin-top: 0.6rem;
     }
+
+  .extra__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact__actions {
+    flex-direction: column;
+  }
+
+  .contact__links {
+    flex-direction: column;
+  }
   
     .footer__content {
       flex-direction: column;

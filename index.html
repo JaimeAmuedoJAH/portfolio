@@ -20,7 +20,7 @@
   <!-- Navegación fija -->
   <header class="header">
     <div class="container header__content">
-      <div class="logo">JA.</div>
+      <div class="logo">JAH</div>
       <nav class="nav">
         <button class="nav__toggle" aria-label="Abrir menú">
           <span></span>
@@ -30,6 +30,8 @@
           <li><a href="#hero" class="nav__link">Inicio</a></li>
           <li><a href="#projects" class="nav__link">Proyectos</a></li>
           <li><a href="#about" class="nav__link">Sobre mí</a></li>
+          <li><a href="#extra" class="nav__link">Formación</a></li>
+          <li><a href="#contact" class="nav__link">Contáctame</a></li>
         </ul>
       </nav>
     </div>
@@ -40,12 +42,15 @@
     <section id="hero" class="hero">
       <div class="container hero__content">
         <div class="hero__text">
-          <p class="hero__eyebrow">Data Analyst</p>
-          <h1 class="hero__title">Jaime Alvarez</h1>
-          <h2 class="hero__subtitle">Data Analyst | SQL | Python | Power BI</h2>
+          <p class="hero__eyebrow">Data Analyst | Desarrollador de Aplicaciones móviles</p>
+          <h1 class="hero__title">Jaime Amuedo Hidalgo</h1>
+          <h2 class="hero__subtitle">Data Analyst | Desarrollador de Aplicaciones móviles</h2>
           <p class="hero__description">
             Transformo datos en decisiones accionables. Diseño dashboards claros,
             modelos analíticos robustos y reportes que impulsan el crecimiento del negocio.
+          </p>
+          <p class="hero__description">
+            Desarrollo de aplicaciones móviles con Java y Kotlin, con diseño de interfaces y funcionalidades.
           </p>
           <div class="hero__actions">
             <a href="#projects" class="btn btn--primary">Ver proyectos</a>
@@ -53,13 +58,9 @@
           </div>
         </div>
         <div class="hero__visual">
-          <div class="hero__card">
-            <p class="hero__card-label">Insights en tiempo real</p>
-            <p class="hero__card-metric">+27%</p>
-            <p class="hero__card-desc">Mejora media en eficiencia reportada tras iniciativas de análisis.</p>
-          </div>
-          <div class="hero__chart hero__chart--one"></div>
-          <div class="hero__chart hero__chart--two"></div>
+          <figure class="hero__photo">
+            <img src="https://imgur.com/AnlgBWp.jpg" alt="Foto de Jaime Amuedo Hidalgo" />
+          </figure>
         </div>
       </div>
     </section>
@@ -167,17 +168,15 @@
           <h2 class="section__title">Sobre mí</h2>
           <p class="section__subtitle">
             Data Analyst con enfoque en negocio, apasionado por traducir datos complejos
-            en historias claras que impulsen decisiones estratégicas.
+            en historias claras que impulsen decisiones estratégicas con soluciones analíticas
+            desde la extracción y limpieza de datos, hasta la construcción de dashboards y 
+            la presentación de insights clave a stakeholders con herramientas de BI y código.
           </p>
           <p>
-            Tengo experiencia trabajando con equipos de marketing, ventas y operaciones,
-            diseñando soluciones analíticas end-to-end: desde la extracción y limpieza de datos,
-            hasta la construcción de dashboards y la presentación de insights clave a stakeholders.
-          </p>
-          <p>
-            Me siento cómodo trabajando tanto con herramientas de BI como con código,
-            y disfruto especialmente de los proyectos donde los datos se conectan directamente
-            con métricas de impacto real en el negocio.
+            También tengo experiencia en el desarrollo de aplicaciones móviles con Java y Kotlin,
+            con diseño de interfaces y funcionalidades, utilizando Android Studio e IntelliJ IDEA,
+            con conocimientos de frameworks como Jetpack Compose y Spring Boot,
+            y conocimientos de bases de datos SQL y NoSQL.
           </p>
         </div>
 
@@ -186,25 +185,176 @@
           <ul class="skills-list">
             <li class="skills-list__item">
               <span class="skills-list__label">Lenguajes</span>
-              <span class="skills-list__value">SQL, Python, DAX</span>
+              <span class="skills-list__value">SQL, Python, Java, Kotlin, Spring</span>
             </li>
             <li class="skills-list__item">
               <span class="skills-list__label">Herramientas BI</span>
-              <span class="skills-list__value">Power BI, Tableau, Looker Studio</span>
+              <span class="skills-list__value">Power BI, Tableau</span>
             </li>
             <li class="skills-list__item">
               <span class="skills-list__label">Data Wrangling</span>
-              <span class="skills-list__value">Pandas, Power Query, ETL básico</span>
+              <span class="skills-list__value">Pandas, Power Query, ETL</span>
             </li>
             <li class="skills-list__item">
               <span class="skills-list__label">Reporting</span>
               <span class="skills-list__value">Dashboards ejecutivos, storytelling con datos</span>
             </li>
             <li class="skills-list__item">
-              <span class="skills-list__label">Otros</span>
-              <span class="skills-list__value">Excel avanzado, Git, APIs REST</span>
+              <span class="skills-list__label">IDE'S</span>
+              <span class="skills-list__value">Android Studio, IntelliJ IDEA, VS Code, Pycharm</span>
+            </li>
+            <li class="skills-list__item">
+                <span class="skills-list__label">Otros</span>
+                <span class="skills-list__value">Excel avanzado, Git, Github, APIs REST</span>
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Estudios y conocimientos adicionales -->
+    <section id="extra" class="section section--alt">
+      <div class="container extra">
+        <header class="section__header">
+          <h2 class="section__title">Formación y conocimientos</h2>
+          <p class="section__subtitle">
+            Formación técnica y stack adicional que complemento junto el desarrollo de aplicaciones móviles.
+          </p>
+        </header>
+
+        <div class="extra__grid">
+          <article class="extra-card">
+            <div class="extra-card__pill">Formación</div>
+            <h3 class="extra-card__title">Desarrollo de Aplicaciones Multiplataforma</h3>
+            <p class="extra-card__text">
+                Base sólida en construcción de aplicaciones robustas, patrones de arquitectura
+              y escritura de código mantenible.
+            </p>
+            <ul class="extra-card__list">
+              <li>Java / Kotlin</li>
+              <li>Spring Boot</li>
+              <li>REST APIs</li>
+              <li>Bases de datos SQL / NoSQL</li>
+            </ul>
+          </article>
+
+          <article class="extra-card">
+            <div class="extra-card__pill extra-card__pill--accent">Tech Stack complementario</div>
+            <h3 class="extra-card__title">Herramientas y metodologías</h3>
+            <p class="extra-card__text">
+              Conjunto de herramientas que aplico para desarrollo, integración y colaboración.
+            </p>
+            <div class="extra-card__chips">
+                <span>Git & GitHub</span>
+              <span>Maven / Gradle</span>
+              <span>Docker</span>
+              <span>Postman</span>
+              <span>APIs REST</span>
+              <span>Jetpack Compose</span>
+              <span>IntelliJ IDEA</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Estudios y conocimientos adicionales (duplicado) -->
+    <section id="extra-2" class="section section--alt">
+      <div class="container extra">
+        <header class="section__header">
+          <h2 class="section__title">Formación y conocimientos</h2>
+          <p class="section__subtitle">
+            Formación técnica y stack adicional que complemento junto a la analítica de datos.
+          </p>
+        </header>
+
+        <div class="extra__grid">
+          <article class="extra-card">
+            <div class="extra-card__pill">Formación</div>
+            <h3 class="extra-card__title">Bootcamp Data Analyst Junior</h3>
+            <p class="extra-card__text">
+                Formación técnica y stack adicional que complemento junto a la formación de analista de datos.
+            </p>
+            <ul class="extra-card__list">
+              <li>Python</li>
+              <li>Numpy / Pandas / matplotlib / seaborn / scikit-learn</li>
+              <li>Jupyter Notebook / Google Colab</li>
+              <li>Excel avanzado / Power BI</li>
+            </ul>
+          </article>
+
+          <article class="extra-card">
+            <div class="extra-card__pill extra-card__pill--accent">Tech Stack complementario</div>
+            <h3 class="extra-card__title">Herramientas y metodologías</h3>
+            <p class="extra-card__text">
+              Conjunto de herramientas que aplico para desarrollo, integración y colaboración.
+            </p>
+            <div class="extra-card__chips">
+                <span>Python</span>
+                <span>Pandas / NumPy</span>
+                <span>scikit-learn</span>
+                <span>Matplotlib / Seaborn</span>
+                <span>Jupyter / Colab</span>
+                <span>Power BI / Excel</span>
+                <span>APIs / Requests</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="section section--contact">
+      <div class="container contact">
+        <div class="section__header">
+          <h2 class="section__title">Contáctame</h2>
+          <p class="section__subtitle">
+            ¿Tienes un proyecto o una idea en mente? Hablemos y diseñemos juntos
+            la estrategia.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__card">
+            <div class="contact__pill">Información</div>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <span class="contact__icon">📞</span>
+                <div>
+                  <p class="contact__label">Teléfono</p>
+                  <p class="contact__value">+34 638 89 38 47</p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="contact__icon">✉️</span>
+                <div>
+                  <p class="contact__label">Email</p>
+                  <p class="contact__value">jaimeamuedo@gmail.com</p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="contact__icon">📍</span>
+                <div>
+                  <p class="contact__label">Ubicación</p>
+                  <p class="contact__value">San Juan de Aznalfarache · Sevilla</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact__card contact__card--cta">
+            <div class="contact__pill contact__pill--accent">Hablemos</div>
+            <p class="contact__cta-text">
+              Disponible para proyectos de analítica, visualización y modelado y proyectos de desarrollo de aplicaciones móviles.
+              Respondo en menos de 24h.
+            </p>
+            <div class="contact__actions">
+              <a class="btn btn--primary" href="https://github.com/JaimeAmuedoJAH?tab=repositories">GitHub</a>
+              <a class="btn btn--ghost" href="https://www.linkedin.com/in/jaime-amuedo-a432bb354/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -214,13 +364,13 @@
   <footer class="footer">
     <div class="container footer__content">
       <p class="footer__copy">
-        © <span id="year"></span> Jaime Alvarez · Data Analyst
+        © <span id="year"></span> Jaime Amuedo Hidalgo · Data Analyst | Desarrollador de Aplicaciones móviles
       </p>
       <div class="footer__links">
         <!-- Reemplazar # por enlaces reales -->
-        <a href="mailto:tuemail@ejemplo.com" class="footer__link">Email</a>
-        <a href="#" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="#" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:jaimeamuedo@gmail.com" class="footer__link">Email</a>
+        <a href="https://www.linkedin.com/in/jaime-amuedo-a432bb354" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/JaimeAmuedoJAH" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </footer>
