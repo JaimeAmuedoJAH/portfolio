@@ -32,7 +32,6 @@ One-page portfolio en HTML/CSS/JS vanilla, listo para GitHub Pages. Muestra perf
 ## Despliegue en GitHub Pages
 1) Sube a una rama (`main` por ejemplo).  
 2) En Settings → Pages: Source = Deploy from a branch → `main` → `/ (root)`.  
-3) Guarda; espera a que genere la URL.
 
 ## Contacto
 - [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jaimeamuedo@gmail.com)
